@@ -156,5 +156,5 @@ def bench_linear(activations: List[Optional[Activation]]):
                 pretty_plot(results, title, "TFlops/s", dash_key="pytorch")
 
 
-activations = [ac for ac in Activation] + [None]  # type: ignore
+activations = [ac for ac in Activation] #  + [None]  # type: ignore
 bench_linear(activations)  # type: ignore
